@@ -17,6 +17,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "angular2-text-mask",
+              "js-brasil"
+            ],
             "outputPath": "dist/angular-v15-libs-brasil",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -63,7 +67,7 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
